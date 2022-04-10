@@ -28,9 +28,8 @@ def clean_alita_dataset(json_file):
 
     data = pd.json_normalize(json_file) 
 
-    data = data[['reference', 'on_sale', 'online_only', 'minimal_quantity', 'price', 'date_add', 'date_add', 'name', 'description', 'category_name'
-    ,'link', 'quantity', 'rate', 'has_discount', 'discount_percentage', 'discount_amount', 'price_amount', 'Autor(es)', 'Editorial', 'Colección',
-     'Idioma', 'Fecha de publicación', 'Edad recomendada', 'Formato', 'ISBN']]
+    data = data[['reference', 'on_sale', 'online_only', 'minimal_quantity', 'price', 'date_add', 'name', 'description', 'category_name'
+    ,'link', 'quantity', 'rate', 'Autor(es)', 'Editorial', 'Colección', 'Idioma', 'Fecha de publicación', 'Edad recomendada', 'Formato', 'ISBN']]
 
     return data
 
